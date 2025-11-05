@@ -43,8 +43,9 @@ localStorage.clear();
 ;タップしてスタート
 ;★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 
-[font size="20" bold="true" color="white"]
+[font size="40" bold="true" color="white"]
 [nolog]
+音が出ます！[r]
 クリックかタップしてスタート[p]
 [endnolog]
 [resetfont]
