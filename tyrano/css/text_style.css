@@ -22,7 +22,7 @@ color: red;
   margin: auto;
   width: 90%;
   color: black;
-  font-size: 1.7em;
+  font-size: 1.5em;
   font-family: "meiryo";
   line-height: 1.5em;
   text-indent: 1em;
@@ -31,6 +31,12 @@ color: red;
 
 @media screen and (max-width: 550px) {
   .box {
-  font-size: 2em;
+  font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .box {
+  font-size: 2.2em;
   }
 }
