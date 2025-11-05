@@ -1,0 +1,40 @@
+.line_spacing {
+line-height: 1.6em; /* 行の高さを実数値＋単位(px)で指定する */
+hanging-punctuation: force-end;
+}
+
+.line_spacing_large{
+line-height: 1.2em; /* 行の高さを実数値＋単位(px)で指定する */
+hanging-punctuation: force-end;
+}
+
+.indentation {
+  text-indent: -1em;
+  padding-left: 1em;
+}
+
+.html_red {
+color: red;
+}
+
+@media screen and (max-width: 990px) {
+.box{
+  margin: auto;
+  width: 90%;
+  color: black;
+  font-size: 1.6em;
+  font-family: "meiryo";
+  line-height: 1.5em;
+  text-indent: 1em;
+}
+}
+
+.box{
+  margin: auto;
+  width: 90%;
+  color: black;
+  font-size: 2em;
+  font-family: "meiryo";
+  line-height: 1.7em;
+  text-indent: 1em;
+}

@@ -1,0 +1,84 @@
+/********************************************************************************
+* ツールチップテキスト
+*********************************************************************************/
+/* テキスト */
+.tooltip {
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+}
+
+/********************************************************************************
+* デスクリプション上
+*********************************************************************************/
+/* デスクリプション上 */
+.desc_top {
+	display: none;
+	position: absolute;
+	padding: 10px;
+	font-size: 12px;
+	line-height: 1.6em;
+	border-radius: 10px;
+	background-color: white;
+	word-wrap: break-word;
+}
+
+/* デスクリプション尻尾上 */
+.desc_top:before {
+	content: "";
+	position: absolute;
+	top: 95%;
+	left: 20%;
+	border: 10px solid transparent;
+	border-top: 15px solid black;
+	border-top-color: inherit;
+	margin-bottom: 10px;
+}
+
+/* hover可能な場合 */
+@media (hover: hover) {
+
+	/* デスクリプション上ホバー */
+	.tooltip:hover .desc_top {
+		display: inline-block;
+		position: absolute;
+		bottom: 110%;
+		left: 0;
+	}
+
+}
+
+/* hover不可能な場合 */
+@media (hover: none) {
+
+	/* デスクリプション上アクティブ */
+	.tooltip:active .desc_top {
+		display: inline-block;
+		position: absolute;
+		bottom: 110%;
+		left: 0;
+	}
+
+}
+
+
+/********************************************************************************
+* z-index制御
+*********************************************************************************/
+/* メッセージ */
+.message_inner {
+	z-index:auto !important;
+	box-sizing: content-box;
+}
+
+/* メッセージ p span */
+.message_inner p span,
+.img_next {
+	position:relative;
+	z-index:999;
+}
+
+/* メッセージ p span.tooltip */
+.message_inner p span.tooltip {
+	z-index:99999;
+}
