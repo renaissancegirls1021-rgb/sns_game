@@ -29,14 +29,16 @@
 
 ;オープニング
 [if exp ="f.debug_op == true"]
+[wait time="1000"]
+
 ;背景動画再生
 [bgmovie storage="title.mp4" loop="false" volume="30"]
 [wait time="3000"]
 
 ;タイトル表示
 [image name="title" layer ="1" storage ="logo.png" width="200" top ="50" left ="380" page="back"]
-[ptext name="title" layer ="1" text ="第 1 話" size ="48" width="900" x ="30" y ="260" color ="white" face ="kei" align ="center" edge="6px 0x000000" page="back"]
-[ptext name="title" layer ="1" text ="ゴッホちゃんはチヤホヤされたい" size ="56" width="900" x ="30" y ="350" color ="white" face ="kei" align ="center" edge="6px 0x000000" page="back"]
+[ptext name="title" layer ="1" text ="第 1 話" size ="48" width="900" x ="30" y ="260" color ="white" face ="kei" align ="center" edge="6px 0x000000" page="back" time="0"]
+[ptext name="title" layer ="1" text ="ゴッホちゃんはチヤホヤされたい" size ="56" width="900" x ="30" y ="350" color ="white" face ="kei" align ="center" edge="6px 0x000000" page="back" time="0"]
 [trans layer="1" time="500" ]
 
 [wait time="500"]
