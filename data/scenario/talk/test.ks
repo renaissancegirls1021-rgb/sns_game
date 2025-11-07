@@ -13,6 +13,9 @@
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ;変数
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+;tips内容
+[eval exp="f.tips_text[0] = 'ゴッホの代表作。うねるように渦巻く青い星空が特徴的。'"]
+[eval exp="f.tips_text[1] = 'ゴッホは神父だった父の影響もありキリスト教の宣教師を目指していたが、途中で挫折した。'"]
 
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ;デバッグ
@@ -73,7 +76,13 @@
 ;本編
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
+[button graphic="button/skip.png" role="skip" x="540" y="440"]
+[button graphic="button/auto.png" role="auto" x="750" y="440"]
 [layopt layer ="message0" visible ="true"]
+
+[manpu layer="1" name="gogh" type="gaan2" x="-10" y="50"]
+
+[playse storage="shock.mp3" volume="100"]
 
 #gogh
 げそぉ～～～っ。[p]
@@ -91,11 +100,11 @@
 あっ。レンちゃんセンパイ。[r]
 聞いて下さいよォ～。[p]
 
-最近、SNSを見ると右も左も[r]
+最近、SNSを見れば右も左も[r]
 絵が上手い人ばっかりじゃないスか。[p]
 
-かたや、自分は絵が売れず、[r]
-明日のパンにも困るありさま……。[p]
+かたや、自分は絵がサッパリ売れず、[r]
+今日のゴハンにも困るありさま……。[p]
 
 [playse storage="bomb.mp3"]
 ;振動
@@ -106,18 +115,22 @@
 
 [chara_mod name="rembrandt" face="shirake" time="0" cross="false"]
 
+[manpu layer="1" name="rembrandt" type="ase" x="-10"]
+
 #rembrandt
 うわぁ、心配したのを後悔するくらいしょうもない！[p]
 
 ;振動終わり
 [stop_wiggle name="gogh"]
 
+[manpu layer="1" name="gogh" type="ase2" x="20" y="90"]
+
 #gogh
 ぴえ～んっ！[r]
 追い打ちかけるのやめてくださいっ！[p]
 
 レンちゃんセンパイ、なんかいいアイデアないスかっ！[r]
-みんなが、自分の方を見てくれるアイデアはっ！[p]
+みんなが、[strong text="自分の方を見てくれるアイデア"]はっ！[p]
 
 #rembrandt
 それが簡単にできたら、[r]
@@ -130,6 +143,8 @@
 
 [chara_mod name="rembrandt" face="normal" time="0" cross="false"]
 
+[manpu layer="1" name="rembrandt" type="pikon"]
+
 #rembrandt
 ……そうだ！[r]
 今流行りの[strong text="「アレ」"]やってみればいいんじゃない？[p]
@@ -141,7 +156,7 @@
 [scene_change]
 
 ;キャラ表示
-[chara_show layer="1"  name="michelangelo" time="100" top="150" top="&f.michelangelo_top"]
+[chara_show layer="1"  name="michelangelo" face="normal" time="100" top="&f.michelangelo_top"]
 
 #michelangelo
 おい、レンブラント。[r]
@@ -155,12 +170,10 @@
 そうか、キミはSNSとかやってないんだっけ。[p]
 
 ……あいつ、手早くチヤホヤされたいって言うから、[r]
-[strong text="Youtubeのお絵かき配信"]を勧めてみたんだよね。[p]
+[strong text="Youtubeの、お絵かき講座配信"]を勧めてみたんだよね。[p]
 
 #michelangelo
-ほう。[p]
-
-たしか、ゴッホって[text_tips text="宣教師" no="1"]を目指してたんだよな？[r]
+ほう。たしか、ゴッホって[text_tips text="宣教師" no="1"]を目指してたんだよな？[r]
 教えるのは得意そうなもんだが。[p]
 
 #rembrandt
@@ -178,40 +191,70 @@
 [kei text="ゴッホちゃんでーっす！"][p]
 
 今日は、[strong text="「これをやる絵師は絶ッッッ対に成功しない！"][r]
-[strong text="今すぐやめるべき絵の習慣」"]を３つご紹介します！[p]
+[strong text="今すぐやめるべき絵の習慣」"]をご紹介します！[p]
 
 [chara_mod name="gogh" face="smile" time="0" cross="false"]
 
+ひとつでも当てはまった方は、以下のURLをクリック！[r]
+お役立ち資料を[strong text="良心価格で"]ご提供しまッス！[p]
+
+[playse storage="kira.mp3" volume="100"]
 ;ジャンプ
 [kanim keyframe="jump" name="gogh" time="200" count="2"]
-ひとつでも当てはまった方は、以下のURLをクリック！[r]
-無料でお役立ち資料をご提供しま～～ッス！[p]
+さらに、[strong text="会員限定のDiscordサーバー"]で有益情報をシェア！[r]
+みんなも鬼努力して神絵師になりましょ～～～～っ！[p]
+
 
 ;シーンチェンジ
-[scene_change bg="atelier.png"]
+
+;マスク
+[mask time="200"]
+
+;文章消す
+#
+[cm]
+
+;キャラ全部消す
+[chara_hide_all layer="1" time="0" wait="true"]
+
+[bg storage="atelier.png" time="0"]
 
 ;キャラ表示
-[chara_show layer="1"  name="michelangelo" time="100" top="&f.michelangelo_top"]
+[chara_show layer="1"  name="michelangelo" face="angry" time="1" top="&f.michelangelo_top"]
 
 ;キャラ表示
-[chara_show layer="1"  name="rembrandt" face="shirake" time="100" top="&f.rembrandt_top"]
+[chara_show layer="1"  name="rembrandt" face="shirake" time="1" top="&f.rembrandt_top"]
+
+;[wait time = ""]
+[wait time="10"]
+;マスクオフ
+[mask_off time="200"]
+
 
 #michelangelo
 
+;集中線
+[layermode_movie video="syutyu.mp4" time="100" mode="multiply" opacity="50"]
+
+;漫符
+[manpu layer="1" name="michelangelo" type="muka3" x="100"]
+
 [playse storage="bomb_2.mp3" volume="100"]
 
-[kei text="……情報商材ビジネスじゃねーか！"][p]
+[kei text="……情報商材屋じゃねーか！"][p]
 
 #rembrandt
 しかも本人、売れてないからね。絵。[p]
 
-信じられないくらい炎上して、チャンネル消して[r]
+[strong text="信じられないくらい炎上"]して、チャンネル消して[r]
 フランスへ自分探しの旅に出たそうだよ。[p]
 
-#michelangelo
-[kei text="……そのまま帰ってくるな！"][p]
+[playse storage="bishi.mp3" volume="100"]
 
-[layopt layer ="message0" visible ="false"]
+;振動
+[start_wiggle name="michelangelo"]
+#michelangelo
+[kei text="そのまま帰ってくるなァーッ！" red="true"][p]
 
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ;終わりの処理
@@ -221,12 +264,27 @@
 ;マスク
 [mask time="200"]
 
-;いろいろ消す
+;★★★色々消す処理★★★
+;レイヤー処理
+[layopt layer ="message0" visible ="false"]
+;fix消す
+[clearfix]
+;画面効果消す
+[free_layermode time="0"]
+;アニメ全停止
+[stop_kanim layer="1"]
+;キャラ消す
 [chara_hide_all layer="1" time="0" wait="true"]
+;名前消す
 #
+;テキスト消す
 [cm]
+;BGM消す
 [fadeoutbgm time="200"]
 
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+;解説に向けての処理
+;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ;muse表示
 [image layer ="1" name="muse" storage ="portrait/gogh.png" visible ="true" top ="-50" left ="450" width="480"]
 [layopt layer ="1" opacity="30"]
@@ -248,13 +306,15 @@
 [html left="0" top="180"]
 <div class="box">
 <p>ゴッホは生前、絵がほとんど売れなかった……というエピソードは日本でもよく知られています。</p>
-<p>とはいえ「生前に売れたのは1枚だけ」という有名な話も正確にはやや誇張があるようで、<span class="html_red">何枚か売れていた可能性が高い</span>とか。しかし、<span class="html_red">「赤いブドウ畑」</span>という作品以外は、公的に売れた記録が残っていないのです……。</p>
+<p>売れた絵として有名なのが、売買の公的な記録が残っている<span class="html_red">「赤いブドウ畑」</span>という作品。</p>
+<p>とはいえ「生前に売れたのは1枚だけ」という有名な話も正確にはやや誇張があるようで、<span class="html_red">何枚か売れていた可能性が高い</span>そうです。</p>
 </div>
 [endhtml]
 
-[ptext name="title" layer ="2" text ="END" size ="50" width="800" x ="30" y ="550" color ="black" face ="kei" align ="right"]
-
 ;マスクオフ
 [mask_off time="200"]
+
+[wait time="1000"]
+[ptext name="title" layer ="2" text ="END" size ="50" width="800" x ="30" y ="550" color ="black" face ="kei" align ="right" time="500"]
 
 [s]

@@ -281,7 +281,7 @@
       desc_color: "",
       desc_backcolor: "",
       desc_height: "",
-      desc_width: "",
+      desc_width: "350",
     },
     start : function(pm) {
 
@@ -370,7 +370,8 @@
 
           // ツールチップカラー設定
           spanDesc.css({
-            "color": `${desc_color}`,
+            "color": `black`,
+//            "color": `${desc_color}`,
           });
 
         }
@@ -380,8 +381,10 @@
 
           // ツールチップ背景カラー設定
           spanDesc.css({
-            "background": `${desc_backcolor}`,
-            "border-color": `${desc_backcolor}`,
+            "background": `#f0f8ff`,
+//            "background": `${desc_backcolor}`,
+            "border": `4px solid black`,
+//            "border-color": `${desc_backcolor}`,
           });
 
         }
@@ -503,8 +506,10 @@
         text_color: "blue",
         position: "top",
         desc_fontsize: 24,
-        desc_color: "white",
-        desc_backcolor: "#333333",
+ desc_color: "black",
+//        desc_color: "white",
+desc_backcolor: "white",
+//        desc_backcolor: "#333333",
         desc_height: "",
         desc_width: "300",
       }

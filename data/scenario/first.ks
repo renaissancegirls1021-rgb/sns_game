@@ -24,6 +24,8 @@
 [bgmopt volume="0"]
 [endif]
 
+
+
 ;★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 ;セーブデータ削除
 ;★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
@@ -42,14 +44,14 @@ localStorage.clear();
 ;★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 ;タップしてスタート
 ;★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
-
+/*
 [font size="40" bold="true" color="white"]
 [nolog]
 音が出ます！[r]
 クリックかタップしてスタート[p]
 [endnolog]
 [resetfont]
-
+*/
 ;★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 ;プラグインとマクロ読み込み
 ;★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
@@ -67,7 +69,7 @@ localStorage.clear();
 ;メッセージウィンドウ設定
 ;★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 ;デフォルトは会話用
-[position layer="message0" left="16" top="448" width="936" height="184" frame="frame.png" margint="48" marginl="16" marginr="16" marginb="10" opacity="255" visible="false"]
+[position layer="message0" left="16" top="448" width="936" height="184" frame="frame.png" margint="52" marginl="16" marginr="16" marginb="10" opacity="255" visible="false"]
 
 ;名前表示位置
 [ptext name="chara_name_area" layer="message0" width="256" x="44" y="456" size="32" face="kei"]
@@ -76,7 +78,11 @@ localStorage.clear();
 [chara_config talk_focus="brightness" talk_anim="up" talk_anim_time="100" pos_change_time="300"]
 
 ;ポポポ音
-[popopo volume="20" type="triangle"  time="10" frequency="G"]
+[popopo volume="10" type="triangle"  time="100" frequency="G"]
+;[popopo type="none"]
+
+[glyph_auto line="auto_disp.png" fix="true" left="-10" top="50" folder="image"]
+[glyph_skip line="skip_disp.png" fix="true" left="-10" top="50" folder="image"]
 
 ;★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 ;キャラ定義
@@ -98,8 +104,7 @@ localStorage.clear();
 f.tips_text = [];
 [endscript]
 
-[eval exp="f.tips_text[0] = 'ゴッホの代表作。うねるように渦巻く青い星空が特徴的。'"]
-[eval exp="f.tips_text[1] = 'ゴッホは父の影響もありキリスト教の宣教師を目指していたが、途中で挫折した。'"]
+
 
 ;★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 ;アニメ定義
@@ -114,6 +119,8 @@ f.tips_text = [];
 ;★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 ;★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 ;★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+
+;[jump storage ="sandbox.ks"]
 
 ;会話本文ページ
 [jump storage ="talk/test.ks"]

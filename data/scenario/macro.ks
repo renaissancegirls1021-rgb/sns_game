@@ -1,13 +1,16 @@
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-;シーンチェンジ　[scene_change bg="" bgm=""]
+;シーンチェンジ　[scene_change bg="" bgm="" chara_save=""]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 [macro name="scene_change"]
 ;マスク
 [mask time="200"]
-;キャラ全部消す
-[chara_hide_all layer="1" time="0" wait="true"]
+
+;文章消す
 #
 [cm]
+
+;キャラ全部消す
+[chara_hide_all layer="1" time="0" wait="true"]
 
 ;背景が指定されている時、変える
 [if exp ="mp.bg != undefined"]
@@ -45,10 +48,16 @@
 [resetfont]
 [endmacro]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-;文字を強調 [kei text=""]
+;文字を強調 [kei text="" red=""]
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 [macro name="kei"]
 [font size="40" face="kei"]
+
+;赤い文字
+[if exp ="mp.red != undefined"]
+[font color="red"]
+[endif]
+
 [emb exp="mp.text"]
 [resetfont]
 [endmacro]
@@ -56,11 +65,6 @@
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ;ジャンプ
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-[macro name="kei"]
-[font size="40" face="kei"]
-[emb exp="mp.text"]
-[resetfont]
-[endmacro]
 
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 [return]
