@@ -13,7 +13,7 @@
 
 ;オープニング trueで再生する
 [eval exp="f.debug_op = true"]
-;[eval exp="f.debug_op = false"]
+[eval exp="f.debug_op = false"]
 
 ;デフォ音量設定
 [seopt volume="20"]
@@ -40,6 +40,12 @@ localStorage.clear();
 ;★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 ;右下のメニューボタンを非表示にする
 [hidemenubutton]
+
+;★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+;preload中表示
+;★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+
+[loading_log preload="now loading" dottime="500"]
 
 ;★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 ;タップしてスタート
