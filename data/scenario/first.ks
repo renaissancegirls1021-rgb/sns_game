@@ -118,10 +118,14 @@ f.tips_text = [];
 ;アニメロード
 [call storage="my_anime.ks"]
 
-
-[ptext name="title" layer ="1" text ="ゴッホちゃんはチヤホヤされたい" size ="56" width="900" x ="30" y ="350" color ="black" face ="kei" align ="center" time="0"]
+;★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+;フォント読み込み
+;★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+[layopt layer ="1" visible ="true"]
+[ptext name="title" layer ="1" text ="あ" size ="56" width="900" x ="30" y ="350" color ="black" face ="kei" align ="center" time="0"]
 [wait time="1"]
 [free layer="1" name="title"]
+[layopt layer ="1" visible ="false"]
 
 ;★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
 ;★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
