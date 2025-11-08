@@ -311,10 +311,13 @@
 [html left="0" top="180"]
 <div class="box">
 <p>ゴッホは生前、絵がほとんど売れなかった……というエピソードは日本でもよく知られています。</p>
-<p>売れた絵として有名なのが、売買の公的な記録が残っている<span class="html_red">「赤いブドウ畑」</span>という作品。</p>
-<p>とはいえ「生前に売れたのは1枚だけ」という有名な話も正確にはやや誇張があるようで、<span class="html_red">何枚か売れていた可能性が高い</span>そうです。</p>
+<p>とはいえ「生前に売れたのは1枚だけ」という有名な話もやや誇張があるようで、実際には<span class="html_red">デッサンを含む数点が売れた形跡がある</span>といわれています。</p>
+<p>ただし売れた作品のほとんどは写真などの記録が残っておらず、唯一はっきりと記録が残っているのが<span class="html_red">「赤いブドウ畑」</span>という油絵です。</p>
 </div>
 [endhtml]
+
+;出典
+[ptext name="title" layer ="2" text ="The Baltimore Sun “The van Gogh legend – a different picture The story that the artist sold just one painting in his lifetime endures. In fact, he sold at least two.”</br>https://www.baltimoresun.com/1998/10/25/the-van-gogh-legend-a-different-picture-the-story-that-the-artist-sold-just-one-painting-in-his-lifetime-endures-in-fact-he-sold-at-least-two/</br>公開：1998.10.25｜更新：2021.9.28｜参照日：2025.11.8" size ="10" width="600" x ="100" y ="540" color ="black" align ="left" time="0"]
 
 ;マスクオフ
 [mask_off time="200"]
