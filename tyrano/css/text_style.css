@@ -23,12 +23,13 @@ color: red;
   width: 90%;
   color: black;
   font-family: "meiryo";
-font-size: 2em;
+font-size: 1.5em;
   line-height: 1.5em;
   text-indent: 1em;
   text-align: justify;
 }
 
+/*
 /*Xタイムラインサイズ*/
 @media screen and (max-width: 510px) {
   .box {
@@ -41,3 +42,4 @@ font-size: 2em;
   font-size: 2.2em;
   }
 }
+*/
