@@ -29,7 +29,7 @@
 
 ;オープニング
 [if exp ="f.debug_op == true"]
-[wait time="1000"]
+
 
 ;背景動画再生
 [bgmovie storage="title.mp4" loop="false" volume="30"]
