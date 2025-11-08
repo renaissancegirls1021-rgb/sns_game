@@ -33,15 +33,15 @@
 [preload storage="data/others/plugin/manpu/image/pikon.png" wait="true"]
 
 [preload storage="data/others/plugin/manpu/sound/pikon.mp3" wait="true"]
-[preload storage="data/others/plugin/manpu/sound/se.ogg" wait="true"]
-[preload storage="data/others/plugin/manpu/sound/se2.ogg" wait="true"]
-[preload storage="data/others/plugin/manpu/sound/se3.ogg" wait="true"]
-[preload storage="data/others/plugin/manpu/sound/se4.ogg" wait="true"]
-[preload storage="data/others/plugin/manpu/sound/se5.ogg" wait="true"]
-[preload storage="data/others/plugin/manpu/sound/se6.ogg" wait="true"]
-[preload storage="data/others/plugin/manpu/sound/se7.ogg" wait="true"]
-[preload storage="data/others/plugin/manpu/sound/se8.ogg" wait="true"]
-[preload storage="data/others/plugin/manpu/sound/se9.ogg" wait="true"]
+[preload storage="data/others/plugin/manpu/sound/se.mp3" wait="true"]
+[preload storage="data/others/plugin/manpu/sound/se2.mp3" wait="true"]
+[preload storage="data/others/plugin/manpu/sound/se3.mp3" wait="true"]
+[preload storage="data/others/plugin/manpu/sound/se4.mp3" wait="true"]
+[preload storage="data/others/plugin/manpu/sound/se5.mp3" wait="true"]
+[preload storage="data/others/plugin/manpu/sound/se6.mp3" wait="true"]
+[preload storage="data/others/plugin/manpu/sound/se7.mp3" wait="true"]
+[preload storage="data/others/plugin/manpu/sound/se8.mp3" wait="true"]
+[preload storage="data/others/plugin/manpu/sound/se9.mp3" wait="true"]
 
 ;＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ;動画

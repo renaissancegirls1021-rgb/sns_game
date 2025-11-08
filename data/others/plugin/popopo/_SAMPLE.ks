@@ -17,7 +17,7 @@ _　　　　東京ティラノスクリプト専門学校一室[p]
 
 [resetfont]
 [delay speed=60]
-[playbgm storage=music.ogg volume=50]
+[playbgm storage=music.mp3 volume=50]
 
 ; タイプは三角波、音程はA(ラ)
 [popopo type=triangle frequency=A octave=0]
@@ -47,8 +47,8 @@ _　　　　東京ティラノスクリプト専門学校一室[p]
 私の名前はあかね。[p]
 
 
-; タイプはファイル、popopo.oggを再生せよ
-[popopo type=file storage=popopo.ogg]
+; タイプはファイル、popopo.mp3を再生せよ
+[popopo type=file storage=popopo.mp3]
 #あかね
 もしかして、ノベルゲームの開発に興味があるの？[p]
 (サンプルシナリオここまで)

@@ -29,7 +29,6 @@ font-size: 1.5em;
   text-align: justify;
 }
 
-/*
 /*Xタイムラインサイズ*/
 @media screen and (max-width: 510px) {
   .box {
@@ -42,4 +41,3 @@ font-size: 1.5em;
   font-size: 2.2em;
   }
 }
-*/
