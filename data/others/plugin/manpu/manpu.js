@@ -59,7 +59,7 @@ if (typeof TYRANO.kag.stat.tempura === "undefined") {
       // すべてのアニメーションの元となる設定です
       def: {
         file      : "ase.png", // 画像ファイル名
-        sound     : "se.ogg",  // 音声ファイル名
+        sound     : "se.mp3",  // 音声ファイル名
         x         : 0,         // 調整用
         y         : 0,         // 調整用
         _x        : 0,         // キャラの left 位置を基準にして、どれだけ右にずらすか
@@ -83,14 +83,14 @@ if (typeof TYRANO.kag.stat.tempura === "undefined") {
       // 　　 デフォルト設定に対する割合（ 0.5 とか 2 とか）で指定する
       // 　　 これは時間の調節をしやすくするため
       //
-      //【２】効果音をつけたい場合は「sound:"XXX.ogg"」の行を付け加える
+      //【２】効果音をつけたい場合は「sound:"XXX.mp3"」の行を付け加える
       // 　　 逆に効果音をなくしたい場合はこの行を削除する
       // 　　 ファイルの場所は./data/others/plugin/manpu/soundの中を想定している
       //
       ,
       ase: {
         file: "ase.png",
-        sound: "se2.ogg", // 音声ファイル名。効果音を指定している行はここ
+        sound: "se2.mp3", // 音声ファイル名。効果音を指定している行はここ
         in_effect: "fadeInDown",
         out_effect: "fadeOutDown",
         _x: -50,
@@ -100,7 +100,7 @@ if (typeof TYRANO.kag.stat.tempura === "undefined") {
       ,
       ase2: {
         file: "ase2.png",
-        sound: "se6.ogg",
+        sound: "se6.mp3",
         in_effect: "shake",
         _x: -10,
         _y: -90
@@ -109,7 +109,7 @@ if (typeof TYRANO.kag.stat.tempura === "undefined") {
       ,
       bikkuri: {
         file: "bikkuri.png",
-        sound: "se4.ogg",
+        sound: "se4.mp3",
         in_effect: "fadeInUpBig",
         in_time: 0.5,
         time: 1.5,
@@ -120,14 +120,14 @@ if (typeof TYRANO.kag.stat.tempura === "undefined") {
       ,
       bikkuri2: {
         file: "bikkuri2.png",
-        sound: "se4.ogg",
+        sound: "se4.mp3",
         in_effect: "bounceIn"
       }
       // ==========================
       ,
       fukidashi: {
         file: "fukidashi.png",
-        sound: "se.ogg",
+        sound: "se.mp3",
         in_effect: "bounce",
         _x: -50
       }
@@ -135,7 +135,7 @@ if (typeof TYRANO.kag.stat.tempura === "undefined") {
       ,
       fukidashi2: {
         file: "fukidashi2.png",
-        sound: "se.ogg",
+        sound: "se.mp3",
         in_effect: "fadeInUp",
         out_effect: "fadeOutUp",
         _x: -50
@@ -144,7 +144,7 @@ if (typeof TYRANO.kag.stat.tempura === "undefined") {
       ,
       gaan: {
         file: "gaan.png",
-        sound: "se2.ogg",
+        sound: "se2.mp3",
         in_effect: "fadeInDown",
         out_effect: "fadeOutDown",
         _x: 200,
@@ -154,7 +154,7 @@ if (typeof TYRANO.kag.stat.tempura === "undefined") {
       ,
       hatena: {
         file: "hatena.png",
-        sound: "se7.ogg",
+        sound: "se7.mp3",
         in_effect: "flipInY",
         in_time: 2,
         time: 0.8,
@@ -165,7 +165,7 @@ if (typeof TYRANO.kag.stat.tempura === "undefined") {
       ,
       heart: {
         file: "heart.png",
-        sound: "se8.ogg",
+        sound: "se8.mp3",
         in_effect: "pulse",
         in_count: "2",
         out_effect: "bounceOut"
@@ -174,7 +174,7 @@ if (typeof TYRANO.kag.stat.tempura === "undefined") {
       ,
       heart2: {
         file: "heart2.png",
-        sound: "se9.ogg",
+        sound: "se9.mp3",
         in_effect: "tada",
         _y: -80
       }
@@ -182,7 +182,7 @@ if (typeof TYRANO.kag.stat.tempura === "undefined") {
       ,
       heart3: {
         file: "heart3.png",
-        sound: "se8.ogg",
+        sound: "se8.mp3",
         in_effect: "manpuLeftUp",
         in_time: 3,
         time: 0,
@@ -193,7 +193,7 @@ if (typeof TYRANO.kag.stat.tempura === "undefined") {
       ,
       kiran: {
         file: "kiran.png",
-        sound: "se5.ogg",
+        sound: "se5.mp3",
         in_effect: "manpuKiran",
         in_time: 3,
         time: 0,
@@ -205,7 +205,7 @@ if (typeof TYRANO.kag.stat.tempura === "undefined") {
       ,
       mojamoja: {
         file: "mojamoja.png",
-        sound: "se9.ogg",
+        sound: "se9.mp3",
         in_effect: "manpuLeftUp",
         in_time: 3,
         time: 0,
@@ -218,7 +218,7 @@ if (typeof TYRANO.kag.stat.tempura === "undefined") {
       ,
       muka: {
         file: "muka.png",
-        sound: "se5.ogg",
+        sound: "se5.mp3",
         in_effect: "tada",
         _x: 50
       }
@@ -227,7 +227,7 @@ if (typeof TYRANO.kag.stat.tempura === "undefined") {
       ,
       muka2: {
         file: "muka2.png",
-        sound: "se5.ogg",
+        sound: "se5.mp3",
         in_effect: "bounce",
         in_time: 0.8,
         _x: 30,
@@ -238,7 +238,7 @@ if (typeof TYRANO.kag.stat.tempura === "undefined") {
       ,
       nami: {
         file: "nami.png",
-        sound: "se9.ogg",
+        sound: "se9.mp3",
         n_effect: "manpuLeftUp",
         in_time: 3,
         time: 0,
@@ -251,7 +251,7 @@ if (typeof TYRANO.kag.stat.tempura === "undefined") {
       ,
       nami2: {
         file: "nami2.png",
-        sound: "se9.ogg",
+        sound: "se9.mp3",
         in_effect: "manpuLeftUp",
         in_time: 3,
         time: 0,
@@ -264,7 +264,7 @@ if (typeof TYRANO.kag.stat.tempura === "undefined") {
       ,
       nanto: {
         file: "nanto.png",
-        sound: "se.ogg",
+        sound: "se.mp3",
         in_effect: "flash",
         _x: -10,
         _y: -30
@@ -273,7 +273,7 @@ if (typeof TYRANO.kag.stat.tempura === "undefined") {
       ,
       onpu: {
         file: "onpu.png",
-        sound: "se.ogg",
+        sound: "se.mp3",
         in_effect: "manpuLeftUp",
         in_time: 3,
         time: 0,
@@ -284,7 +284,7 @@ if (typeof TYRANO.kag.stat.tempura === "undefined") {
       ,
       oya: {
         file: "oya.png",
-        sound: "se.ogg",
+        sound: "se.mp3",
         in_effect: "flash",
         _x: -60,
         _y: -20
@@ -302,7 +302,7 @@ if (typeof TYRANO.kag.stat.tempura === "undefined") {
       ,
       tameiki: {
         file: "tameiki.png",
-        sound: "se9.ogg",
+        sound: "se9.mp3",
         in_effect: "manpuLeftDown",
         in_time: 3,
         time: 0,
@@ -315,7 +315,7 @@ if (typeof TYRANO.kag.stat.tempura === "undefined") {
       ,
       waiwai: {
         file: "waiwai.png",
-        sound: "se8.ogg",
+        sound: "se8.mp3",
         width: 300,
         in_effect: "pulse",
         in_count: "2",
