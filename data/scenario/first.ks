@@ -13,7 +13,7 @@
 
 ;オープニング trueで再生する
 [eval exp="f.debug_op = true"]
-[eval exp="f.debug_op = false"]
+;[eval exp="f.debug_op = false"]
 
 ;デフォ音量設定
 [seopt volume="20"]
